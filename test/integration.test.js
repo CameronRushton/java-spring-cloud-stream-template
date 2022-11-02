@@ -67,7 +67,7 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/scs-function-name/dynamic-topic-same-function-name.yaml');
   
     const validatedFiles = [
-      'src/main/java/Application.java'
+      'src/main/java/com/asyncapi/Application.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -76,7 +76,7 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/scs-function-name/animals-same-function-name.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java'
+      'src/main/java/com/asyncapi/Application.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -106,7 +106,7 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/animals.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java'
+      'src/main/java/com/asyncapi/Application.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -145,9 +145,9 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/nested-arrays.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java',
-      'src/main/java/Dossier.java',
-      'src/main/java/Debtor.java'
+      'src/main/java/com/asyncapi/Application.java',
+      'src/main/java/com/asyncapi/Dossier.java',
+      'src/main/java/com/asyncapi/Debtor.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -156,12 +156,12 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/smarty-lighting-streetlights.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java',
-      'src/main/java/DimLightPayload.java',
-      'src/main/java/LightMeasuredPayload.java',
-      'src/main/java/SentAt.java',
-      'src/main/java/TurnOnOffPayload.java',
-      'src/main/java/SubObject.java'
+      'src/main/java/com/asyncapi/Application.java',
+      'src/main/java/com/asyncapi/DimLightPayload.java',
+      'src/main/java/com/asyncapi/LightMeasuredPayload.java',
+      'src/main/java/com/asyncapi/SentAt.java',
+      'src/main/java/com/asyncapi/TurnOnOffPayload.java',
+      'src/main/java/com/asyncapi/SubObject.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -170,7 +170,7 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/avro-schema-namespace.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java',
+      'src/main/java/com/asyncapi/Application.java',
       'src/main/java/com/example/api/jobOrder/JobOrder.java',
       'src/main/java/com/example/api/jobAck/JobAcknowledge.java'
     ];
@@ -191,7 +191,7 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/multivariable-topic.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java'
+      'src/main/java/com/asyncapi/Application.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -212,10 +212,10 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/schema-with-array-of-objects.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java',
-      'src/main/java/ChargeAdjustments.java',
-      'src/main/java/RideReceipt.java',
-      'src/main/java/TestObject.java'
+      'src/main/java/com/asyncapi/Application.java',
+      'src/main/java/com/asyncapi/ChargeAdjustments.java',
+      'src/main/java/com/asyncapi/RideReceipt.java',
+      'src/main/java/com/asyncapi/TestObject.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });
@@ -232,11 +232,11 @@ describe('template integration tests using the generator', () => {
     await generate('mocks/schemas-with-duplicate-$ids.yaml');
 
     const validatedFiles = [
-      'src/main/java/Application.java',
-      'src/main/java/Driver.java',
-      'src/main/java/Passenger.java',
-      'src/main/java/PaymentCharged.java',
-      'src/main/java/RideUpdated1.java'
+      'src/main/java/com/asyncapi/Application.java',
+      'src/main/java/com/asyncapi/Driver.java',
+      'src/main/java/com/asyncapi/Passenger.java',
+      'src/main/java/com/asyncapi/PaymentCharged.java',
+      'src/main/java/com/asyncapi/RideUpdated1.java'
     ];
     await assertExpectedFiles(validatedFiles);
   });

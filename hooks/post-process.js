@@ -49,6 +49,9 @@ function getDefaultJavaPackage(generator) {
   if (!javaPackage && info && extensions) {
     javaPackage = extensions['x-java-package'];
   }
+  if (!javaPackage) {
+    javaPackage = 'com.asyncapi';
+  }
 
   debugPostProcess(`getDefaultJavaPackage: ${javaPackage}`);
   return javaPackage;
